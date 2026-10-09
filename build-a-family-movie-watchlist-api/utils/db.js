@@ -24,7 +24,7 @@ export function findById(id) {
 }
 
 export function getWatchlist(userId) {
-  if (!findById(userId)) {
+  if (!findById(Number(userId))) {
     return null;
   }
 
@@ -34,7 +34,7 @@ export function getWatchlist(userId) {
 }
 
 export function addMovie(userId, movieData) {
-  if (!findById(userId)) {
+  if (!findById(Number(userId))) {
     return null;
   }
 
@@ -57,7 +57,7 @@ export function addMovie(userId, movieData) {
 }
 
 export function updateMovie(userId, movieId, updates) {
-  if (!findById(userId)) {
+  if (!findById(Number(userId))) {
     return null;
   }
 
@@ -77,7 +77,7 @@ export function updateMovie(userId, movieId, updates) {
 }
 
 export function deleteMovie(userId, movieId) {
-  if (!findById(userId)) {
+  if (!findById(Number(userId))) {
     return null;
   }
   const watchlists = readWatchlists();
