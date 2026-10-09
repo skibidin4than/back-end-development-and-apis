@@ -42,13 +42,16 @@
       "open": true,
       "showLoader": true,
       "timeout": 4000,
-      "url": "http://localhost:8080"
+      "url": "https://refactored-carnival-gxrrw9gvgjgxfvxpp-8080.app.github.dev"
     }
   ],
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.profiles.linux": {
     "bash": {
-      "args": ["--init-file", "./bash/sourcerer.sh"],
+      "args": [
+        "--init-file",
+        "./bash/sourcerer.sh"
+      ],
       "icon": "terminal-bash",
       "path": "bash"
     }
